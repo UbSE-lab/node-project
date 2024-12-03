@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary-color: #4a90e2;
+        --secondary-color: #f8f9fa;
+        --text-color: #333;
+        --price-color: #2ecc71;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+      }
+
+      nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li a {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #333;
+      }
+
+      .login-btn {
+        padding: 0.5rem 1.2rem;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .login-btn:hover {
+        background-color: #357abd;
+      }
+
+      /* Header styles remain the same */
+
+      /* Main Content */
+      main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        display: grid;
+        gap: 2rem;
+        padding: 0 1rem;
+      }
+
+      /* Products Grid */
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .product-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .product-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .product-info {
+        padding: 1rem;
+      }
+
+      .product-info h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      .price {
+        color: var(--price-color);
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .description {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 1rem;
+      }
+
+      .add-to-cart {
+        width: 100%;
+        padding: 0.8rem;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .add-to-cart:hover {
+        background-color: #357abd;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+
+        .product-grid {
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">상점</div>
+        <ul>
+          <li><a href="#home">신발</a></li>
+          <li><a href="#home">상의</a></li>
+          <li><a href="#home">하의</a></li>
+          <li><a href="#home">바지</a></li>
+          <li><a href="#home">24 F/W</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="products">
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="product1.jpg" alt="Product 1" />
+            </div>
+            <div class="product-info">
+              <h3>Product Name</h3>
+              <p class="price">$99.99</p>
+              <p class="description">Short product description here...</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <!-- More product cards -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 MyStore. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
