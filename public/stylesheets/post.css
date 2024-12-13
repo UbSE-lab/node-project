@@ -1,0 +1,35 @@
+h1{
+    font-weight: 900;
+    color: skyblue;
+    text-align: center;
+}
+table {
+    margin-top: 35px;
+}
+tbody{
+    width: 300px;
+}
+
+tr {
+    margin-top: 20px;
+}
+
+.item {
+    margin-top: 35px;
+}
+
+.id {
+    margin-top: 40px;
+}
+
+.text{
+    margin-top: 40px;
+}
+
+.input_text_box {
+    width: 400px;
+    height: 400px;
+
+    text-align: center;
+    font-size: 20px;
+}

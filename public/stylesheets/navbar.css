@@ -1,0 +1,24 @@
+.navbar{
+    background-color:rgb(255, 255, 255);
+   }
+.navbar-brand {
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: 900;
+    padding-left: 10%;
+   }
+.navbar-nav > li {
+   padding-left:5px;
+   padding-right:20px;
+   }
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.nav-link{
+    font-size: large;
+    color: black;
+    font-weight: 400;
+
+}

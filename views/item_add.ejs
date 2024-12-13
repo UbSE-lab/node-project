@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/item" method="post">
+      <input
+        type="text"
+        id="item-input"
+        class="form-control"
+        name="name"
+        placeholder="이름을 작성해주세요"
+      />
+      <input
+        type="text"
+        id="item-input"
+        class="form-control"
+        name="price"
+        placeholder="가격을 입력해주세요"
+      />
+      <input
+        type="number"
+        name="count"
+        class="form-control"
+        id="item-input"
+        placeholder="개수를 입력해주세요"
+      />
+
+      <button type="submit" class="btn btn-primary">전송하기</button>
+    </form>
+
+    <table>
+        <thead>
+            <th>제품이름</th>
+            <th>가격</th>
+            <th>개수</th>
+            <th>관리</th>
+        </thead>
+
+        <tbody>
+            <% for (let i=0; i<items.length; i++) { %>
+            <tr>
+                <td><%- items[i].name %></td>
+                <td><%- items[i].price %></td>
+                <td></td>
+                <td>
+                    <form action="/edit/<%= items[i].name %>" method="get">
+                        <button type="submit">수정</button>
+                    </form>
+                    <form action="/delete/<%- items[i].name %>" method="get">
+                        <button type="submit">삭제</button>
+                    </form>
+                </td>
+               
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+
+  </body>
+</html>

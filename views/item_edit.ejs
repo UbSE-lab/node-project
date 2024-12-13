@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/edit" method="post">
+      <input type="hidden" value="<%= item.id %>" name = "id" />
+      <input
+        type="text"
+        id="item-input"
+        class="form-control"
+        name="name"
+        value="<%= item.name %>"
+        placeholder="이름을 작성해주세요"
+      />
+      <input
+        type="text"
+        id="item-input"
+        class="form-control"
+        name="price"
+        value="<%= item.price %>"
+        placeholder="가격을 입력해주세요"
+      />
+      <input
+        type="number"
+        name="count"
+        class="form-control"
+        id="item-input"
+        value="<%= item.count %>"
+        placeholder="개수를 입력해주세요"
+      />
+
+      <button type="submit" class="btn btn-primary">전송하기</button>
+    </form>
+  </body>
+</html>

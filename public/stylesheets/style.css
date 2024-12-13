@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding-top: 8px;
+}
+
+.top{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 10%;
+}
+
+.top-a {
+  font-size: 12px;
+  text-align: right;
+  text-decoration: none;
+  padding-right: 3px;
+  color: #666565;
+}
+
+/*여까지 네비바 */
+
+
+
+.top-btn {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.top-btn-menu_b1, .top-btn-menu_b2, .top-btn-menu_b3, .top-btn-menu_b4 {
+  width: 50%;
+  height: 50px;
+  display: inline-block;
+
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+.top-btn-menu_b1 {
+  background-color: rgb(158, 237, 71);
+  color: black;
+}
+ .top-btn-menu_b2, .top-btn-menu_b3, .top-btn-menu_b4{
+  background-color: black;
+  color: rgb(158, 237, 71);
+}
+
+.my_itme_menu {
+  margin-top: 30px;
+}
+.my_item{
+  padding-bottom: 40px;
+}
+
+.item-card {
+  display: flex;
+  justify-content: center;
+}
+.itme-h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-size: 22px;
+  font-weight: 800;
+}
+
+
+
+/*class 선택자 */
+
+/*tag 선택자 */
+
+/*id 선택자는 #이름
