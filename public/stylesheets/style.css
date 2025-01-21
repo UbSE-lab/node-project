@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+} */
+
+/* tag selector */
+a {
+  color: #00b7ff;
+}
+
+/* id 선택자(selector) */
+#item-input {
+  width: 20rem;
+}
+
+/* class selector */
+/* .item */
+/* form  */
